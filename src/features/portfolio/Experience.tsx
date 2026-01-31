@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Briefcase, Calendar, MapPin, Zap } from "lucide-react";
+import { Briefcase, Calendar, MapPin, Terminal, Zap } from "lucide-react";
 
 const EXPERIENCES = [
   {
@@ -124,12 +124,12 @@ export default function Experience() {
         
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-16">
-          <h2 className="text-3xl font-bold text-white tracking-tight flex items-center gap-3">
-            <Briefcase className="text-cyan-400" size={28} />
-            Experience.History
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-800 to-slate-800" />
+          <h2 className="text-sm font-mono text-cyan-500 uppercase tracking-[0.3em] flex items-center gap-3">
+            <Terminal size={16} /> 03. Experience_History
           </h2>
-          <div className="h-[1px] flex-1 bg-slate-800" />
         </div>
+        
 
         <div className="space-y-12">
           {EXPERIENCES.map((job, index) => (

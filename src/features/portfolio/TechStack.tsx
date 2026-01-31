@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Cpu, Layers, Server, Cloud, Database } from "lucide-react";
+import { Cpu, Layers, Server, Cloud, Database, Terminal } from "lucide-react";
 
 const SKILL_DATA = [
   {
@@ -46,12 +46,12 @@ export default function TechStack() {
     <section id="stack" className="py-24 bg-[#020617]">
       <div className="container mx-auto px-6">
         
+        {/* Section Header */}
         <div className="flex items-center gap-4 mb-16">
-          <h2 className="text-3xl font-bold text-white tracking-tight flex items-center gap-3">
-            <Cpu className="text-cyan-400" size={28} />
-            Technical.Capabilities
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-800 to-slate-800" />
+          <h2 className="text-sm font-mono text-cyan-500 uppercase tracking-[0.3em] flex items-center gap-3">
+            <Terminal size={16} /> 02. Technical_Capabilities
           </h2>
-          <div className="h-[1px] flex-1 bg-slate-800" />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">

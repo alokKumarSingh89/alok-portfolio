@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Experience {
+  id           Int      @id @default(autoincrement())
+  company      String
+  role         String
+  period       String
+  location     String?
+  description  String   @db.Text
+  impactMetric String? // e.g., "40% Build Reduction"
+  tasks        String[] // Array of strings for the bullet points
+  techStack    String[] // Array of strings for tags
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
